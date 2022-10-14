@@ -1,14 +1,34 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-<body>
-    <a href="/"><span style="font-size:200%;">CodingBat</span>
-        <span style="font-size:200%;">CodingBat</span>
-    </a>
-    " code practice " == $0
+<body style="padding: 20px">
+<h1 class="title">Tabs</h1>
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#d58ca1')">Tab 1</button>
+        <button onclick="showPanel(1,'#85bf87')">Tab 2</button>
+        <button onclick="showPanel(2,'#90c5d8')">Tab 3</button>
+        <button onclick="showPanel(3,'#eab38b')">Tab 4</button>
+    </div>
+    <div class="tabPanel">
+        <p class="projectLabel">Tab 1:Content</p>
+    </div>
+    <div class="tabPanel">
+        <p class="projectLabel">Tab 2:Content</p>
+    </div>
+    <div class="tabPanel">
+        <p class="projectLabel">Tab 3:Content</p>
+    </div>
+    <div class="tabPanel">
+        <p class="projectLabel">Tab 4:Content</p>
+    </div>
+</div>
+
+<script src="myScript.js"></script>
 </body>
 </html>
