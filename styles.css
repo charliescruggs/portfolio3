@@ -31,7 +31,7 @@
     background-color: #d7d4d4;
 }
 .tabContainer .tabPanel{
-    height: 85%;
+    height: 100%;
     background-color: gray;
     color: white;
     text-align: center;
