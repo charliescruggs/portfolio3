@@ -1,7 +1,11 @@
+var title = document.querySelector(".title");
 var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
 var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
 
 function showPanel(panelIndex,colorCode) {
+
+    title.style.color = colorCode;
+
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
         node.style.color="";
@@ -14,4 +18,6 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.display="block";
     tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
+
+
 showPanel(0,'#85bf87');

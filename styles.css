@@ -1,6 +1,6 @@
 .title{
     font-family: sans-serif;
-    color: #90c5d8; 
+    color: #85bf87; 
     font-size: 36px;
     padding: 20px;
     border-width: 3px;
@@ -93,9 +93,15 @@ body {
 }
 
 .cardLabel {
-
+  text-align: center;
   font-size:69%;
   text-align: center;
+  border-width: 1.5px;
+  border-color: #d7d4d4;
+  border-style:groove;
+  border-radius: 5px;
+  border-left: 2px;
+  border-right: 2px;
 }
 
 .cardDesc {
