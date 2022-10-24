@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Charlie's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body style="padding: 20px">
@@ -19,84 +22,172 @@
     <div class="tabPanel">
         <div class="row">
             <div class="column">
-              <div class="card">
+              <a href = 'https://wikipedia.com' class="card" data-name="p-1">
                 <img src="images/asteroidsImg.png" alt="..." class="card-img-top">
                 <h2 class="cardLabel">Asteroids</h2>
                 <p class="cardDesc">A classic arcade game</p>
-              </div>
+              </a>
             </div>
             <div class="column">
-              <div class="card">
+              <a href = "" class="card" data-name="p-2">
                 <img src="images/zip.png" alt="..." class="card-img-top">
                 <h2 class="cardLabel">File Compression Utility</h2>
                 <p class="cardDesc">Zip and unzip your files</p>
-              </div>
+              </a>
             </div>
             <div class="column">
-              <div class="card">
+              <a href = "" class="card" data-name="p-3">
                 <img src="images/Library.png" alt="..." class="card-img-top">
                 <h2 class="cardLabel">Prepare new library user data</h2>
                 <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
+              </a>
             </div>
         </div>
         <div class="row"> 
           <div class="column">
-            <div class="card">
+            <a href = "" class="card" data-name="p-4">
               <img src="images/LoginGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 2</h2>
+              <h2 class="cardLabel">User Login Project 1</h2>
               <p class="cardDesc">A simple login GUI module</p>
-            </div>
+            </a>
           </div>
           <div class="column">
-            <div class="card">
+            <a href = "" class="card" data-name="p-5">
               <img src="images/ConsoleGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 1</h2>
+              <h2 class="cardLabel">User Login Project 2</h2>
               <p class="cardDesc">A more complex login module</p>
-            </div>
+            </a>
           </div>
       </div>
     </div>
     <div class="tabPanel">
         <div class="row">
             <div class="column">
-              <div class="card">
+              <a href = "" class="card" data-name="p-6">
                 <img src="images/CurrencyDisplay.png" alt="..." class="card-img-top">
                 <h2 class="cardLabel">Currency Display</h2>
-                <p class="cardDesc">Script that pulls Wikipedia table into a CSV File</p>
-              </div>
+                <p class="cardDesc">Webscraper that converts Wikipedia table into an organized CSV file</p>
+              </a>
             </div>
             <div class="column">
-              <div class="card">
+              <a href = "" class="card" data-name="p-7">
                 <img src="images/Library.png" alt="..." class="card-img-top">
                 <h2 class="cardLabel">Cyber Threat Data Extractor</h2>
                 <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
+              </a>
             </div>
         </div>
     </div>
     <div class="tabPanel">
       <div class="row">
           <div class="column">
-            <div class="card">
+            <a href = "" class="card" data-name="p-8">
               <img src="images/Library.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">Project 1</h2>
-            </div>
+              <h2 class="cardLabel">Website 1</h2>
+            </a>
           </div>
       </div>
   </div>
     <div class="tabPanel">
         <div class="row">
             <div class="column">
-              <div class="card">
-                <img src="images/Library.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Project 1</h2>
-              </div>
+              <a href = "" class="card" data-name="p-9">
+                <img src="images/overleaf image.png" alt="..." class="card-img-top">
+                <h2 class="cardLabel">Overleaf Resume</h2>
+                <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
+              </a>
             </div>
           </div>
         </div>
     </div>
   </div>
+</div>
+
+<!-- -------------Create pop up windows for each project -->
+<div class = "project-preview">
+
+  <div class = "preview active" data-name="p-1">
+    <i class='fas fa-times-circle'></i>
+    <img src="images/asteroidsImg.png" alt="">
+    <h3>Asteroids</h3>
+    <p>A classic arcade game</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-2">
+    <img src="images/zip.png" alt="">
+    <h3>File Compression Utility</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-3">
+    <img src="images/Library.png" alt="">
+    <h3>Prepare new library user data</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-4">
+    <img src="images/LoginGUI.png" alt="">
+    <h3>User Login Project 1</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-5">
+    <img src="images/ConsoleGUI.png" alt="">
+    <h3>User Login Project 2</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-6">
+    <img src="images/CurrencyDisplay.png" alt="">
+    <h3>Currency Display</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-7">
+    <img src="images/Library.png" alt="">
+    <h3>Cyber Threat Data Extractor</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-8">
+    <img src="images/Library.png" alt="">
+    <h3>Website 1</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+
+  <div class = "preview" data-name="p-9">
+    <img src="images/overleaf image.png" alt="">
+    <h3>Overleaf Resume</h3>
+    <p>A classic arcade game`</p>
+    <div class ="buttons">
+      <a href="#" class="source-code">access source code</a>
+    </div>
+  </div>
+  
 </div>
 
 <script src="myScript.js"></script>
