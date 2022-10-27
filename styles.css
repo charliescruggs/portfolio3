@@ -5,7 +5,6 @@
     padding: 20px;
     border-width: 3px;
     border-style:solid;
-    /* #dc2d5e */
     text-align: center;
 }
 .tabContainer{
@@ -128,13 +127,16 @@ body {
 }
 
 .project-preview .preview {
+  height: 90%;
+  width: 70%;
+  overflow-y: scroll;
   display: none;
   padding: 2rem;
   text-align: center;
   background: #fff;
   position: relative;
   margin: 2rem;
-  width: 40rem;
+ 
 }
 
 .project-preview .preview.active {
