@@ -200,3 +200,13 @@ body {
   padding-right: 10px;
 }
 
+a.source-code {
+  position: absolute;
+  color: #444;
+  border: .1rem solid #444;
+}
+
+a.source-code:hover {
+  background: #444;
+  color: #fff;
+}
