@@ -187,5 +187,6 @@ body {
   border-color: #444;
   border-style:solid;
   text-align: left;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
