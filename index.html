@@ -1,224 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Charlie's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-</link>
-	<link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="UTF-8">
+  <title>Charlie's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body style="padding: 20px">
-<h1 class="title">Charlie's Developer Portfolio</h1>
-<div class="tabContainer">
+  <h1 class="title">Charlie's Developer Portfolio</h1>
+  <div class="tabContainer">
     <div class="buttonContainer">
-        <!-- also have to change color for first tab at the end of javascript file -->
-        <button onclick="showPanel(0,'#85bf87')">Java</button>
-        <button onclick="showPanel(1,'#d58ca1')">Python</button>
-        <button onclick="showPanel(2,'#90c5d8')">Web Design</button>
-        <button onclick="showPanel(3,'#eab38b')">Other</button>
-    </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-1">
-                <img src="images/asteroidsImg.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Asteroids</h2>
-                <p class="cardDesc">A classic arcade game</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-2">
-                <img src="images/zip.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">File Compression Utility</h2>
-                <p class="cardDesc">Zip and unzip your files</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-3">
-                <img src="images/Library.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Prepare new library user data</h2>
-                <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
-            </div>
-        </div>
-        <div class="row"> 
-          <div class="column">
-            <div class="card" data-name="p-4">
-              <img src="images/LoginGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 1</h2>
-              <p class="cardDesc">A simple login GUI module</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card" data-name="p-5">
-              <img src="images/ConsoleGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 2</h2>
-              <p class="cardDesc">A more complex login module</p>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-6">
-                <img src="images/CurrencyDisplay.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Currency Display</h2>
-                <p class="cardDesc">Webscraper that pulls Wikipedia table into a CSV file</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-7">
-                <img src="images/Library.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Cyber Threat Data Extractor</h2>
-                <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
-            </div>
-        </div>
+      <!-- also have to change color for first tab at the end of javascript file -->
+      <button onclick="showPanel(0,'#85bf87')">Java</button> <button onclick="showPanel(1,'#d58ca1')">Python</button> <button onclick="showPanel(2,'#90c5d8')">Web Design</button> <button onclick="showPanel(3,'#eab38b')">Other</button>
     </div>
     <div class="tabPanel">
       <div class="row">
-          <div class="column">
-            <div class="card" data-name="p-8">
-              <img src="images/Library.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">Website 1</h2>
-            </div>
-          </div>
-      </div>
-  </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-9">
-                <img src="images/overleaf image.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Overleaf Resume</h2>
-                <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
-              </div>
-            </div>
+        <div class="column">
+          <div class="card" data-name="p-1">
+            <img src="images/asteroidsImg.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Asteroids</h2>
+            <p class="cardDesc">A classic arcade game</p>
           </div>
         </div>
-    </div>
-  </div>
-</div>
-
-<!-- -------------Create pop up windows for each project -->
-<div class = "project-preview">
-  <div class = "preview" data-target="p-1">
-    <i class='fas fa-times-circle'></i>
-    <img src="./images/asteroidDemo.gif">
-    <p>Download link to executable Jar file</p>
-    <div class ="buttons" Asteroids.jar>
-      <a href="/portfolio3/jars/Asteroids.jar">Asteroids.jar</a>
-    </div>
-    <p>(requires class file 59.0 or later/Java version 15 or later)</p>
-    
-    <div class = "project-desc1">
-      <p>This program utilizes Polymorphism by updating each game element in its own specialized way. Within the 
-        AsteroidsGame class, an update method essentially calls the update methods of all the updateElements 
-        objects. This allows for a polymorphic response where each game element can update itself in its own 
-        specialized way. further behavior information of this method can be found in the update methods for each 
-        game element.</p> 
-    </div>
-
-    <div class="project-desc2">
-      <p>The majority of this code was written by me, with a few exceptions as follows:</p>
-      <div class="project-inner-desc2">
-        <p>&nbsp;&nbsp;1. GameDriver (main class) was written by my professor.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;• Its purpose was to specify requiremnts to be satisfied through other methods and classes</p>
-        <p>&nbsp;&nbsp;2. StdDraw is a program I used which is publicly provided by Princeton University.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;• The StdDraw class provides a basic capability for creating drawings with Java programs</p>
+        <div class="column">
+          <div class="card" data-name="p-2">
+            <img src="images/zip.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">File Compression Utility</h2>
+            <p class="cardDesc">Zip and unzip your files</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-3">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Prepare new library user data</h2>
+            <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-4">
+            <img src="images/LoginGUI.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">User Login Project 1</h2>
+            <p class="cardDesc">A simple login GUI module</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-5">
+            <img src="images/ConsoleGUI.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">User Login Project 2</h2>
+            <p class="cardDesc">A more complex login module</p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class ="buttons">
-      <a href="#" class="source-code">source code (github)</a>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-6">
+            <img src="images/CurrencyDisplay.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Currency Display</h2>
+            <p class="cardDesc">Webscraper that pulls Wikipedia table into a CSV file</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-7">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Cyber Threat Data Extractor</h2>
+            <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-  </div>
-
-  <div class = "preview" data-target="p-2">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/zip.png" alt="">
-    <h3>File Compression Utility</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-8">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Website 1</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-9">
+            <img src="images/overleaf%20image.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Overleaf Resume</h2>
+            <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- =============Create pop up windows for each project -->
+  <div class="project-preview">
+    <div class="preview" data-target="p-1">
+      <i class='fas fa-times-circle'></i>
+      <img src="/images/asteroidDemo.gif" alt="asteroidDemo">
+      <p>Download link to executable Jar file</p>
+      <div class="buttons" asteroids.jar="">
+        <a href="/portfolio3/jars/Asteroids.jar">Asteroids.jar</a>
+      </div>
+      <p>(requires class file 59.0 or later/Java version 15 or later)</p>
+      <div class="project-desc1">
+        <p>Polymorphism: This program was designed with Object Oriented Design Principles in mind. for example, within the AsteroidsGame class, an update method essentially calls the update methods of all the AnimatedElement objects. This allows for a polymorphic response where each game element can update itself in its own specialized way. further behavior information of this method can be found in the update methods for each AnimatedElement.</p>
+      </div>
+      <div class="project-desc2">
+        <div class="project-inner-desc2">
+          <p>&nbsp;&nbsp;1.Std Draw: This program utilizes StdDraw, a class belonging to a publically provided Java library called StdLib.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;It provides methods for creating drawings which are created rapidly to create the game animations. Each time the 'game' is updated, the coordinates and other attributes of each GameElement object are updated on the screen.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;By using this publicly availible library, I was able to place more focus on the game behavior.</p>
+        </div>
+      </div>
+      <div class="source-code-buttons">
+        <a href="#">source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-2">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/zip.png" alt="zip">
+      <h3>File Compression Utility</h3>
+      <p>This file compression Utility accomplishles lossless data compression via Huffman encoding tree implementation</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-3">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/Library.png" alt="Library">
+      <h3>Prepare new library user data</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-4">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/LoginGUI.png" alt="LoginGUI">
+      <h3>User Login Project 1</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-5">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/ConsoleGUI.png" alt="ConsoleGUI">
+      <h3>User Login Project 2</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-6">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/CurrencyDisplay.png" alt="CurrencyDisplay">
+      <h3>Currency Display</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-7">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/Library.png" alt="Library">
+      <h3>Cyber Threat Data Extractor</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-8">
+      <i class='fas fa-times-circle'></i>
+      <img src="images/Library.png" alt="Library">
+      <h3>Website 1</h3>
+      <p>A classic arcade game`</p>
+      <div class="buttons">
+        <a href="#" class="source-code">access source code</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-9">
+      <i class='fas fa-times-circle'></i>
+      <h3>Overleaf Resume</h3><embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="82%"> <a href="#" class="source-code">access source code</a>
     </div>
   </div>
-
-  <div class = "preview" data-target="p-3">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Prepare new library user data</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-4">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/LoginGUI.png" alt="">
-    <h3>User Login Project 1</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-5">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/ConsoleGUI.png" alt="">
-    <h3>User Login Project 2</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-6">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/CurrencyDisplay.png" alt="">
-    <h3>Currency Display</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-7">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Cyber Threat Data Extractor</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-8">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Website 1</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-9">
-    <i class='fas fa-times-circle'></i>
-    <h3>Overleaf Resume</h3>
-
-    <embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="82%" />
-    <a href="#" class="source-code">access source code</a>
-  
-  </div>
-  
-</div>
-
-<script src="myScript.js"></script>
+  <script src="myScript.js"></script>
 </body>
 </html>
