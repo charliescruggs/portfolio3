@@ -162,6 +162,11 @@ color: #444;
 font-size: 2rem;
 }
 
+.project-preview .preview img {
+  width:400px;
+  height: 360px;
+  }
+
 .project-preview .preview .buttons a {
 padding: 15px 60px;
 color: #444;
@@ -211,9 +216,4 @@ padding-right: 10px;
   .project-preview .preview .source-code-buttons a:hover {
   background: #444;
   color: #fff;
-  }
-
-.project-preview .preview img {
-  width:400px;
-  height: 360px;
   }
