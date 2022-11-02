@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Charlie's Portfolio</title>
+  <!-- connect to local styles sheet -->
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- font-awesome contains the font for the 'x' icon you see at top right corner of pop ups -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
   <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
@@ -109,22 +111,33 @@
       </div>
       <div class="project-desc2">
         <div class="project-inner-desc2">
-          <p>&nbsp;&nbsp;1.Std Draw: This program utilizes StdDraw, a class belonging to a publically provided Java library called StdLib.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Std Draw: This program utilizes StdDraw, a class belonging to a publically provided Java library called StdLib.</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;It provides methods for creating drawings which are created rapidly to create the game animations. Each time the 'game' is updated, the coordinates and other attributes of each GameElement object are updated on the screen.</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;By using this publicly availible library, I was able to place more focus on the game behavior.</p>
         </div>
       </div>
       <div class="source-code-buttons">
-        <a href="#">source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-2">
       <i class='fas fa-times-circle'></i>
       <img src="images/zip.png" alt="zip">
       <h3>File Compression Utility</h3>
-      <p>This file compression Utility accomplishles lossless data compression via Huffman encoding tree implementation</p>
-      <div class="buttons">
-        <a href="#" class="source-code">access source code</a>
+      <div class="project-desc1">
+        <p>This file compression utility accomplishles lossless data compression via a 'Huffman coding tree' implementation</p>
+      </div>
+      <div class="project-desc2">
+        <div class="project-inner-desc2">
+          <p>&nbsp;&nbsp;What is a Huffman Tree?</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;1. To create a Huffman Tree, first variable-length codes are assigned to each character in 
+            the input stream. the length of the assigned code is based off the frequency of occurences of each character. 
+            The least frequent character is assigned the largest code, and the smallest is assigned to the most frequent.
+          </p>
+        </div>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/File%20Compression%20Utility" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-3">
@@ -156,11 +169,15 @@
     </div>
     <div class="preview" data-target="p-6">
       <i class='fas fa-times-circle'></i>
-      <img src="images/CurrencyDisplay.png" alt="CurrencyDisplay">
       <h3>Currency Display</h3>
-      <p>A classic arcade game`</p>
-      <div class="buttons">
-        <a href="#" class="source-code">access source code</a>
+      <div class="buttons" asteroids.jar="">
+        <a href="/portfolio3/CurrencyDisplay.html" target="_blank">Open Currency Display</a>
+      </div>
+      <p>This button executes python code which exports </p>
+      <p>I am able to run this python code on my website thanks to the capabilities and features of <a href="https://pyscript.net/">pyscript</a></p>
+      <p>Beautiful soup and Pandas were used to export and present this data</p>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Currency%20Display%20(%20Python)" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-7">
@@ -183,7 +200,13 @@
     </div>
     <div class="preview" data-target="p-9">
       <i class='fas fa-times-circle'></i>
-      <h3>Overleaf Resume</h3><embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="82%"> <a href="#" class="source-code">access source code</a>
+      <h3>Overleaf Resume</h3>
+      <embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="65%"></embed>
+      <p>I chose to create my resume with a programming language called LaTeX, wihtin an editor called Overleaf.</p>
+      <p>Here is a read-only version of the template I edited & used.</p>
+      <div class="source-code-buttons">
+        <a href="https://www.overleaf.com/read/vmhztjtyccfs" target="_blank"> source code (github)</a>
+      </div>
     </div>
   </div>
   <script src="myScript.js"></script>
