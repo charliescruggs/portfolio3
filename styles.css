@@ -141,12 +141,14 @@ margin: 2rem;
 
 ::-webkit-scrollbar {
 -webkit-appearance: none;
-width: 7px;
+width: 18px;
+color: cornflowerblue;
 }
 ::-webkit-scrollbar-thumb {
-border-radius: 4px;
-background-color: rgba(0, 0, 0, .5);
--webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
 }
 
 .project-preview .preview.active {
@@ -173,8 +175,8 @@ font-size: 2rem;
 }
 
 .project-preview .preview img {
-  width:400px;
-  height: 360px;
+  width:320px;
+  height: 260px;
   }
 
 .project-preview .preview .buttons a {
@@ -188,23 +190,39 @@ background: #444;
 color: #fff;
 }
 
-.project-desc2 {
-border-width: 1px;
-border-color: #444;
-border-style:solid;
-text-align: left;
-padding: 10px;
-padding-bottom: 10px;
-}
-
-.project-inner-desc2 {
-text-align: left;
-padding-left: 10px;
-padding-right: 5px;
-text-indent:-1.5em;
-}
-
 .project-desc1 {
+  border-width: 1px;
+  border-color: #444;
+  border-style:solid;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+.project-preview .preview .project-desc1 .widediagram{
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+  width: 80%;
+  height: 70%;
+  }
+
+  .project-preview .preview .project-desc1 .logindemo{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 10px;
+    width: 40%;
+    height: 30%;
+    }
+
+ 
+
+
+.project-desc2 {
 border-width: 1px;
 border-color: #444;
 border-style:solid;
@@ -212,9 +230,53 @@ text-align: left;
 padding-left: 10px;
 padding-right: 10px;
 }
+.project-preview .preview .project-desc2 img {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+  width: 80%;
+  height: 70%;
+  }
+.project-desc3 {
+  border-width: 1px;
+  border-color: #444;
+  border-style:solid;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+.project-preview .preview .project-desc3 img {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+  width: 50%;
+  height: 40%;
+  }
+
+  .project-preview .preview .bottombuttons {
+    padding-top: 19px;
+    padding-bottom: 15px;
+  }
+  
+  .project-preview .preview .bottombuttons a {
+    padding: 15px 60px;
+    color: #444;
+    border: .1rem solid #444;
+    }
+    
+    .project-preview .preview .bottombuttons a:hover {
+    background: #444;
+    color: #fff;
+    }
 
 .project-preview .preview .source-code-buttons {
-  padding-top: 16px;
+  padding-top: 19px;
+  padding-bottom: 10px;
 }
 
 .project-preview .preview .source-code-buttons a {

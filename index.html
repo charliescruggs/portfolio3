@@ -90,7 +90,7 @@
         <div class="column">
           <div class="card" data-name="p-9">
             <img src="images/overleaf%20image.png" alt="..." class="card-img-top">
-            <h2 class="cardLabel">Overleaf Resume</h2>
+            <h2 class="cardLabel">Resume</h2>
             <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
           </div>
         </div>
@@ -100,6 +100,7 @@
   <div class="project-preview">
     <div class="preview" data-target="p-1">
       <i class='fas fa-times-circle'></i>
+      <h3>Asteroids Game</h3>
       <img src="images/asteroidDemo.gif" alt=""></img>
       <p>Download link to executable Jar file</p>
       <div class="buttons" asteroids.jar="">
@@ -107,14 +108,35 @@
       </div>
       <p>(requires class file 59.0 or later/Java version 15 or later)</p>
       <div class="project-desc1">
-        <p>Polymorphism: This program was designed with Object Oriented Design Principles in mind. for example, within the AsteroidsGame class, an update method essentially calls the update methods of all the AnimatedElement objects. This allows for a polymorphic response where each game element can update itself in its own specialized way. further behavior information of this method can be found in the update methods for each AnimatedElement.</p>
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This version of the classic Asteroids game was created as a personal programming project during
+           my university studies. Because the course was focused around object oriented design, I implemented
+            this program with polymorphism in mind. Many of the objects share the same parent class, but also
+             contribute their own specialized behavior on the game board. </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;For example, all of the animated objects used such as: asteroids, bullets, ship, stars have unique
+           behavior and values attributed to their type, yet they inherit from the same parent classes: either
+            AnimatedElement.java and/or GameElement.java (see github source code below) where an Animated
+             Element is a GameElement but a game element is not necessarily an Animated Element.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Abbreviated Class diagram of GameElement object relationships:</p>
+        <img src="images/AsteroidsUML.png" class="widediagram"></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;These relationships between objects allow them all to be updated in arrays in the AsteroidsGame class,
+           as the game timer iterates. This allows for encapsulation of each specific object's inner workings from 
+           other classes such as the game driver class. This AsteroidsGame class only needs to call methods of the 
+           objects it calls on for them to behave accordingly. This hierarchy was a key aspect in its object oriented
+            design.</p>
       </div>
       <div class="project-desc2">
-        <div class="project-inner-desc2">
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;Std Draw: This program utilizes StdDraw, a class belonging to a publically provided Java library called StdLib.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;It provides methods for creating drawings which are created rapidly to create the game animations. Each time the 'game' is updated, the coordinates and other attributes of each GameElement object are updated on the screen.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;By using this publicly availible library, I was able to place more focus on the game behavior.</p>
-        </div>
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Some classes were provided by our professor as the primary focus of this project 
+          was to learn object oriented design, while utilizing provided classes and libraries. More information about
+           code provided can be found in the ReadMe file with this project's source code on github.</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line then type ‘java -jar Asteroids.jar’ into 
+          your command line. Alternatively, you may be able to simply select the executable jar to run 
+          depending on the settings on your computer. If you are still having issues, I reccomend downloading 
+          the source code (link below) and compiling & running in your preferred IDE.</p>
       </div>
       <div class="source-code-buttons">
         <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
@@ -122,49 +144,144 @@
     </div>
     <div class="preview" data-target="p-2">
       <i class='fas fa-times-circle'></i>
-      <img src="images/zip.png" alt="zip">
       <h3>File Compression Utility</h3>
       <div class="project-desc1">
-        <p>This file compression utility accomplishles lossless data compression via a 'Huffman coding tree' implementation</p>
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This file compression utility accomplishes lossless data compression via a 
+          ‘Huffman coding tree’ implementation. It was created for a project in a Data and Algorithms course.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;The basic premise of the Huffman encoding is that a unique prefix is assigned 
+          to each character from the input, where each prefix is determined by that character’s frequency. The more 
+          frequent the character, the smaller the prefix code.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This concept can be implemented in a tree-like structure, to be traversed. In 
+          this instance, I used Java’s PriorityQueue, an abstract data type similar to stack data structure. The 
+          difference being a PQ has an element associated with a priority level where an element with a high priority
+           is served before an element with a lower one.</p>
+        <img src="images/huffman.png" class="widediagram"></img>
       </div>
       <div class="project-desc2">
-        <div class="project-inner-desc2">
-          <p>&nbsp;&nbsp;What is a Huffman Tree?</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;1. To create a Huffman Tree, first variable-length codes are assigned to each character in 
-            the input stream. the length of the assigned code is based off the frequency of occurences of each character. 
-            The least frequent character is assigned the largest code, and the smallest is assigned to the most frequent.
-          </p>
-        </div>
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program is an accumulation of my work, as well as some code provided from 
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;course matierials. See README file with source code for more information</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>There are two ‘Main’ classes included in this package.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;1. JMzip (compress/zip file)</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, the user zips a file by compiling & running JMZip.java.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If successful, a zipped document (zipped.jmz) will be created</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in the project’s root folder, outside of the src folder.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;2. JMUnzip (decompress/unzip file)</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This second ‘Main’ class finds this zipped file and decompresses it.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user just has to compile and run this program.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A decompressed document file is created in the project’s root folder (unzipped.doc).</p>
+        <img src="images/zipDemo.png" alt=""></img>
+        <p>A sample document to be zipped is already included in this package in the src file. To zip your own file, 
+          just add your file to the src folder and replace the relative path in the code with a path to your own 
+          document.</p>
+        <p>The path to change can be found in JMzip.java on line 43</p>
+        <img src="images/pathchange.png" alt=""></img>
       </div>
       <div class="source-code-buttons">
-        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/File%20Compression%20Utility" target="_blank"> source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-3">
       <i class='fas fa-times-circle'></i>
-      <img src="images/Library.png" alt="Library">
-      <h3>Prepare new library user data</h3>
-      <p>A classic arcade game`</p>
-      <div class="buttons">
-        <a href="#" class="source-code">access source code</a>
+      <h3>Library User Data</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program converts a CSV file into an XML file while normalizing values to 
+          match the data model of their destination. This was part of a project to integrate Users from another 
+          college into the William & Mary library IT system. Some values were simply wrapped in XML tags while 
+          others needed their values prepared first, and then wrapped in XML tags. Other non-important values were 
+          omitted from the resulting dataset.</p>
+      </div>
+      <div class="project-desc2">
+        <h4>Specifications:</h4>
+        <img src="images/libraryspecs.png" alt=""></img>
+      </div>
+      <div class="project-desc3">
+        <h4>Other notes:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program was created during an internship. The sample dataset accessed by 
+          this code has been modified so it does not reveal legitimate user information.</p>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-4">
       <i class='fas fa-times-circle'></i>
-      <img src="images/LoginGUI.png" alt="LoginGUI">
-      <h3>User Login Project 1</h3>
-      <p>A classic arcade game`</p>
-      <div class="buttons">
-        <a href="#" class="source-code">access source code</a>
+      <h3>User Login 1</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a personal project I created on my own. It is still a work in progress. 
+          Eventually, it will embody the features of the more complex Login Project 2. For now it is only a prototype 
+          Interface.</p>
+        <img src="images/logindemo.png" class="logindemo" alt=""></img>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line then type ‘java -jar UserLogin1.jar’ 
+          into your command line. Alternatively, you may be able to simply select the executable jar to run depending
+           on the settings on your computer. If you are still having issues, I reccomend downloading the source code 
+           (link below) and compiling & running in your preferred IDE..</p>
+      </div>
+      <div class="bottombuttons" Userlogin1.jar="">
+        <a href="jars/UserLogin1.jar">UserLogin1.jar</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-5">
       <i class='fas fa-times-circle'></i>
-      <img src="images/ConsoleGUI.png" alt="ConsoleGUI">
-      <h3>User Login Project 2</h3>
-      <p>A classic arcade game`</p>
-      <div class="buttons">
-        <a href="#" class="source-code">access source code</a>
+      <h3>User Login 2</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a project I created for a Java programming course in university. User
+           Login Project 2 has a console interface where the menu is printed back to the user in 
+           a loop until they choose to exit. The login information is stored in a sample file called 
+           users.txt within the src folder of this project.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program provides the base behavioral structure which will be implemented as a GUI for Login 
+          Project 1. It will utilize buttons, windows, textboxes and data (user info) storage, as opposed to 
+          the menu printing method.</p>
+        <img src="images/login1screenshot1.png" class="logindemo" alt=""></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;In addition to the functionalities printed within the interface, there is some noteworthy functionality 
+          taking place on the backend of this application. This login module offers password encryption via the 
+          included & publicly provided GFG.java.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;When a user submits their password, it is first checked for validity.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It must conform to these constraints:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- length is at least 8 characters</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one upper case character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one lower case character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one numeric digit</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one special character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- cannot contain a space</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Following the password validity check, the password is then encrypted with a “SHA-256” hash algorithm. This work 
+          is done using the provided GFG class mentioned before. When a user logs in, the password is first encrypted,
+           then compared to the encrypted password stored in the users.txt file. This is great because the user’s 
+           raw password input is never stored and minimally handled by the program making it more secure.</p>
+        <img src="images/login2screenshot2.png" class="widediagram" alt=""></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Another feature included throughout this application is input validation, so the user does not end up
+           ‘breaking’ the application while using it with bad input.</p>
+      </div>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program is an accumulation of my work, as well as some code provided from 
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;course matierials. See README file with source code for more information</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in your command line then type ‘java -jar UserLogin2.jar’ 
+          into your command line. Alternatively, you may be able to simply select the executable jar to run depending on 
+          the settings on your computer. If you are still having issues, I recommend downloading the source code 
+          (link below) and compiling & running in your preferred IDE.</p>
+      </div>
+      <div class="bottombuttons" User Login 2 Program.zip="">
+        <a href="jars/User Login 2 Program.zip">Folder with jar file</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-6">
@@ -200,9 +317,8 @@
     </div>
     <div class="preview" data-target="p-9">
       <i class='fas fa-times-circle'></i>
-      <h3>Overleaf Resume</h3>
-      <embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="65%"></embed>
-      <p>This document was created with a programming language called LaTeX, wihtin an editor called Overleaf.</p>
+      <embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="80%"></embed>
+      <p>This document was created with a programming language called LaTeX, within an editor called Overleaf.</p>
       <div class="source-code-buttons">
         <a href="https://www.overleaf.com/read/vmhztjtyccfs" target="_blank"> source code (overleaf.com)</a>
       </div>
