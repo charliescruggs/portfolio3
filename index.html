@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
   <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-<body style="padding: 20px">
+<body>
   <h1 class="title">Charlie's Developer Portfolio</h1>
   <div class="tabContainer">
     <div class="buttonContainer">
@@ -101,7 +101,7 @@
     <div class="preview" data-target="p-1">
       <i class='fas fa-times-circle'></i>
       <h3>Asteroids Game</h3>
-      <img src="images/asteroidDemo.gif" alt=""></img>
+      <img src="images/asteroidDemo.gif" class="asteroiddemo"></img>
       <p>Download link to executable Jar file</p>
       <div class="buttons" asteroids.jar="">
         <a href="/portfolio3/jars/Asteroids.jar">Asteroids.jar</a>
@@ -182,7 +182,7 @@
         <img src="images/pathchange.png" alt=""></img>
       </div>
       <div class="source-code-buttons">
-        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/File%20Compression%20Utility" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-3">
@@ -206,7 +206,7 @@
           this code has been modified so it does not reveal legitimate user information.</p>
       </div>
       <div class="source-code-buttons">
-        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Library%20User%20Data" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-4">
@@ -230,7 +230,7 @@
         <a href="jars/UserLogin1.jar">UserLogin1.jar</a>
       </div>
       <div class="source-code-buttons">
-        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/User%20Login%20Project%201" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-5">
@@ -281,18 +281,45 @@
         <a href="jars/User Login 2 Program.zip">Folder with jar file</a>
       </div>
       <div class="source-code-buttons">
-        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/User%20Login%20Project%202" target="_blank"> source code (github)</a>
       </div>
     </div>
     <div class="preview" data-target="p-6">
       <i class='fas fa-times-circle'></i>
       <h3>Currency Display</h3>
-      <div class="buttons" asteroids.jar="">
-        <a href="/portfolio3/CurrencyDisplay.html" target="_blank">Open Currency Display</a>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This python script is a web scraping utility for pulling wikipedia tables into a 
+          local CSV file. I wrote this program as a personal project.</p>
+        <div class="displayrow">
+          <div class="displaycolumn">
+            <h3>Wikipedia Table</h3>
+            <img src="images/cdisplayinput.png" class="cdisplay"></img>
+          </div>
+          <div class="displaycolumn">
+            <h3>Output as CSV spreadsheet</h3>
+            <img src="images/cdisplayoutput.png" class="cdisplay"></img>
+          </div>
+        </div>
       </div>
-      <p>This button executes python code which exports </p>
-      <p>I am able to run this python code on my website thanks to the capabilities and features of <a href="https://pyscript.net/">pyscript</a></p>
-      <p>Beautiful soup and Pandas were used to export and present this data</p>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I Utilized some popular Python libraries in order to accomplish this including:</p>
+        <p>Requests:&nbsp;&nbsp;This library has a method called ‘urlopen’ which was used to retrieve the initial HTML data 
+          stream from the wikipedia URL in my program. 
+        <p>BeautifulSoup4:&nbsp;&nbsp;This useful library helped me parse the data by html tags in the website’s datastream.
+        <p>Pandas:&nbsp;&nbsp;This library has a dataframe functionality that was used to store the table information. Pandas 
+          also has a to_csv function that allows me to export this dataframe as a CSV.</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to python script at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Import the python script into your preferred IDE and simly run it. The program 
+          will create a file called OUTPUT.csv in the same folder that the Currency_Display.py exists in. OUTPUT.csv 
+          contains the data scraped from the wikipedia tables.</p>
+      </div>
+      <div class="bottombuttons" User Login 2 Program.zip="">
+        <a href="python/Currency_Display.py">Currency_Display.py</a>
+      </div>
       <div class="source-code-buttons">
         <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Currency%20Display%20(%20Python)" target="_blank"> source code (github)</a>
       </div>

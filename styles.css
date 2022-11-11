@@ -174,7 +174,7 @@ color: #444;
 font-size: 2rem;
 }
 
-.project-preview .preview img {
+.project-preview .preview .asteroiddemo {
   width:320px;
   height: 260px;
   }
@@ -219,7 +219,26 @@ color: #fff;
     height: 30%;
     }
 
- 
+  .displaycolumn .cdisplay {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding: 0 10px;
+    padding-bottom: 60px;
+    }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+.displayrow {
+  margin: 0 -5px;
+  padding-top: 1px;
+  }
+  
+  /* Clear floats after the columns */
+ .displayrow:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
 
 
 .project-desc2 {
@@ -236,8 +255,8 @@ padding-right: 10px;
   margin-right: auto;
   display: block;
   padding-bottom: 10px;
-  width: 80%;
-  height: 70%;
+  width: 60%;
+  height: 45%;
   }
 .project-desc3 {
   border-width: 1px;
@@ -254,8 +273,8 @@ padding-right: 10px;
   margin-right: auto;
   display: block;
   padding-bottom: 10px;
-  width: 50%;
-  height: 40%;
+  width: 65%;
+  height: 45%;
   }
 
   .project-preview .preview .bottombuttons {
