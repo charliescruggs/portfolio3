@@ -179,6 +179,11 @@ font-size: 2rem;
   height: 260px;
   }
 
+  .project-preview .preview .coldbrewimg {
+    width:200px;
+    height: 200px;
+    }
+
 .project-preview .preview .buttons a {
 padding: 15px 60px;
 color: #444;
@@ -304,7 +309,7 @@ padding-right: 10px;
 
 .project-preview .preview .source-code-buttons {
   padding-top: 19px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .project-preview .preview .source-code-buttons a {
