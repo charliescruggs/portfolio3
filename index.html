@@ -1,202 +1,378 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Charlie's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-</link>
-	<link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="UTF-8">
+  <title>Charlie's Portfolio</title>
+  <!-- connect to local styles sheet -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- font-awesome contains the font for the 'x' icon you see at top right corner of pop ups -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-<body style="padding: 20px">
-<h1 class="title">Charlie's Developer Portfolio</h1>
-<div class="tabContainer">
+<body>
+  <h1 class="title">Charlie's Developer Portfolio</h1>
+  <div class="tabContainer">
     <div class="buttonContainer">
-        <!-- also have to change color for first tab at the end of javascript file -->
-        <button onclick="showPanel(0,'#85bf87')">Java</button>
-        <button onclick="showPanel(1,'#d58ca1')">Python</button>
-        <button onclick="showPanel(2,'#90c5d8')">Web Design</button>
-        <button onclick="showPanel(3,'#eab38b')">Other</button>
-    </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-1">
-                <img src="images/asteroidsImg.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Asteroids</h2>
-                <p class="cardDesc">A classic arcade game</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-2">
-                <img src="images/zip.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">File Compression Utility</h2>
-                <p class="cardDesc">Zip and unzip your files</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-3">
-                <img src="images/Library.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Prepare new library user data</h2>
-                <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
-            </div>
-        </div>
-        <div class="row"> 
-          <div class="column">
-            <div class="card" data-name="p-4">
-              <img src="images/LoginGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 1</h2>
-              <p class="cardDesc">A simple login GUI module</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card" data-name="p-5">
-              <img src="images/ConsoleGUI.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">User Login Project 2</h2>
-              <p class="cardDesc">A more complex login module</p>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-6">
-                <img src="images/CurrencyDisplay.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Currency Display</h2>
-                <p class="cardDesc">Webscraper that converts Wikipedia table into an organized CSV file</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" data-name="p-7">
-                <img src="images/Library.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Cyber Threat Data Extractor</h2>
-                <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
-              </div>
-            </div>
-        </div>
+      <!-- also have to change color for first tab at the end of javascript file -->
+      <button onclick="showPanel(0,'#85bf87')">Java</button> <button onclick="showPanel(1,'#d58ca1')">Python</button> <button onclick="showPanel(2,'#90c5d8')">Web Design</button> <button onclick="showPanel(3,'#eab38b')">Other</button>
     </div>
     <div class="tabPanel">
       <div class="row">
-          <div class="column">
-            <div class="card" data-name="p-8">
-              <img src="images/Library.png" alt="..." class="card-img-top">
-              <h2 class="cardLabel">Website 1</h2>
-            </div>
-          </div>
-      </div>
-  </div>
-    <div class="tabPanel">
-        <div class="row">
-            <div class="column">
-              <div class="card" data-name="p-9">
-                <img src="images/overleaf image.png" alt="..." class="card-img-top">
-                <h2 class="cardLabel">Overleaf Resume</h2>
-                <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
-              </div>
-            </div>
+        <div class="column">
+          <div class="card" data-name="p-1">
+            <img src="images/asteroidsImg.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Asteroids</h2>
+            <p class="cardDesc">A classic arcade game</p>
           </div>
         </div>
+        <div class="column">
+          <div class="card" data-name="p-2">
+            <img src="images/zip.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">File Compression Utility</h2>
+            <p class="cardDesc">Zip and unzip your files</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-3">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Prepare new library user data</h2>
+            <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-4">
+            <img src="images/LoginGUI.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">User Login Project 1</h2>
+            <p class="cardDesc">A simple login GUI module</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-5">
+            <img src="images/ConsoleGUI.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">User Login Project 2</h2>
+            <p class="cardDesc">A more complex login module</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-6">
+            <img src="images/CurrencyDisplay.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Currency Display</h2>
+            <p class="cardDesc">Webscraper that pulls Wikipedia table into a CSV file</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" data-name="p-7">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Cyber Threat Data Extractor</h2>
+            <p class="cardDesc">Clean CSV data & wrap in XML tags</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-8">
+            <img src="images/Library.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Website 1</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabPanel">
+      <div class="row">
+        <div class="column">
+          <div class="card" data-name="p-9">
+            <img src="images/overleaf%20image.png" alt="..." class="card-img-top">
+            <h2 class="cardLabel">Resume</h2>
+            <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- =============Create pop up windows for each project -->
+  <div class="project-preview">
+    <div class="preview" data-target="p-1">
+      <i class='fas fa-times-circle'></i>
+      <h3>Asteroids Game</h3>
+      <img src="images/asteroidDemo.gif" class="asteroiddemo"></img>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This version of the classic Asteroids game was created as a personal programming project during
+           my university studies. Because the course was focused around object oriented design, I implemented
+            this program with polymorphism in mind. Many of the objects share the same parent class, but also
+             contribute their own specialized behavior on the game board. </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;For example, all of the animated objects used such as: asteroids, bullets, ship, stars have unique
+           behavior and values attributed to their type, yet they inherit from the same parent classes: either
+            AnimatedElement.java and/or GameElement.java (see github source code below) where an Animated
+             Element is a GameElement but a game element is not necessarily an Animated Element.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Abbreviated Class diagram of GameElement object relationships:</p>
+        <img src="images/AsteroidsUML.png" class="asteroiddiagram"></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;These relationships between objects allow them all to be updated in arrays in the AsteroidsGame class,
+           as the game timer iterates. This allows for encapsulation of each specific object's inner workings from 
+           other classes such as the game driver class. This AsteroidsGame class only needs to call methods of the 
+           objects it calls on for them to behave accordingly. This hierarchy was a key aspect in its object oriented
+            design.</p>
+      </div>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Some classes were provided by our professor as the primary focus of this project 
+          was to learn object oriented design, while utilizing provided classes and libraries. More information about
+           code provided can be found in the ReadMe file with this project's source code on github.</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line then type ‘java -jar Asteroids.jar’ into 
+          your command line. Alternatively, you may be able to simply select the executable jar to run 
+          depending on the settings on your computer. If you are still having issues, I reccomend downloading 
+          the source code (link below) and compiling & running in your preferred IDE.</p>
+      </div>
+      <div class="bottombuttons" Asteroids.jar="">
+        <a href="/portfolio3/jars/Asteroids.jar">Asteroids.jar</a>
+      </div>
+      <p>(requires class file 59.0 or later/Java version 15 or later)</p>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Asteroid%20Game" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-2">
+      <i class='fas fa-times-circle'></i>
+      <h3>File Compression Utility</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This file compression utility accomplishes lossless data compression via a 
+          ‘Huffman coding tree’ implementation. It was created for a project in a Data and Algorithms course.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;The basic premise of the Huffman encoding is that a unique prefix is assigned 
+          to each character from the input, where each prefix is determined by that character’s frequency. The more 
+          frequent the character, the smaller the prefix code.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This concept can be implemented in a tree-like structure, to be traversed. In 
+          this instance, I used Java’s PriorityQueue, an abstract data type similar to stack data structure. The 
+          difference being a PQ has an element associated with a priority level where an element with a high priority
+           is served before an element with a lower one.</p>
+        <img src="images/huffman.png" class="widediagram"></img>
+      </div>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program is an accumulation of my work, as well as some code provided from 
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;course matierials. See README file with source code for more information</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>There are two ‘Main’ classes included in this package.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;1. JMzip (compress/zip file)</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, the user zips a file by compiling & running JMZip.java.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If successful, a zipped document (zipped.jmz) will be created</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in the project’s root folder, outside of the src folder.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;2. JMUnzip (decompress/unzip file)</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This second ‘Main’ class finds this zipped file and decompresses it.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user just has to compile and run this program.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A decompressed document file is created in the project’s root folder (unzipped.doc).</p>
+        <img src="images/zipDemo.png" alt=""></img>
+        <p>A sample document to be zipped is already included in this package in the src file. To zip your own file, 
+          just add your file to the src folder and replace the relative path in the code with a path to your own 
+          document.</p>
+        <p>The path to change can be found in JMzip.java on line 43</p>
+        <img src="images/pathchange.png" alt=""></img>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/File%20Compression%20Utility" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-3">
+      <i class='fas fa-times-circle'></i>
+      <h3>Library User Data</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program converts a CSV file into an XML file while normalizing values to 
+          match the data model of their destination. This was part of a project to integrate Users from another 
+          college into the William & Mary library IT system. Some values were simply wrapped in XML tags while 
+          others needed their values prepared first, and then wrapped in XML tags. Other non-important values were 
+          omitted from the resulting dataset.</p>
+      </div>
+      <div class="project-desc2">
+        <h4>Specifications:</h4>
+        <img src="images/libraryspecs.png" alt=""></img>
+      </div>
+      <div class="project-desc3">
+        <h4>Other notes:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program was created during an internship. The sample dataset accessed by 
+          this code has been modified so it does not reveal legitimate user information.</p>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Library%20User%20Data" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-4">
+      <i class='fas fa-times-circle'></i>
+      <h3>User Login 1</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a personal project I created on my own. It is still a work in progress. 
+          Eventually, it will embody the features of the more complex Login Project 2. For now it is only a prototype 
+          Interface.</p>
+        <img src="images/logindemo.png" class="logindemo" alt=""></img>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line then type ‘java -jar UserLogin1.jar’ 
+          into your command line. Alternatively, you may be able to simply select the executable jar to run depending
+           on the settings on your computer. If you are still having issues, I reccomend downloading the source code 
+           (link below) and compiling & running in your preferred IDE..</p>
+      </div>
+      <div class="bottombuttons" Userlogin1.jar="">
+        <a href="jars/UserLogin1.jar">UserLogin1.jar</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/User%20Login%20Project%201" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-5">
+      <i class='fas fa-times-circle'></i>
+      <h3>User Login 2</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a project I created for a Java programming course in university. User
+           Login Project 2 has a console interface where the menu is printed back to the user in 
+           a loop until they choose to exit. The login information is accesed and stored in a sample file called 
+           users.txt within the src folder of this project.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program provides the base behavioral structure which will be implemented as a GUI for Login 
+          Project 1. It will utilize buttons, windows, textboxes and data (user info) storage, as opposed to 
+          the menu printing method.</p>
+        <img src="images/login1screenshot1.png" class="logindemo" alt=""></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;In addition to the functionalities printed within the interface, there is some noteworthy functionality 
+          taking place on the backend of this application. This login module offers password encryption via the 
+          included & publicly provided GFG.java.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;When a user submits their password, it is first checked for validity.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It must conform to these constraints:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- length is at least 8 characters</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one upper case character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one lower case character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one numeric digit</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- includes at least one special character</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- cannot contain a space</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Following the password validity check, the password is then encrypted with a “SHA-256” hash algorithm. This work 
+          is done using the provided GFG class mentioned before. When a user logs in, the password is first encrypted,
+           then compared to the encrypted password stored in the users.txt file. This is great because the user’s 
+           raw password input is never stored and minimally handled by the program making it more secure.</p>
+        <img src="images/login2screenshot2.png" class="widediagram" alt=""></img>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Another feature included throughout this application is input validation, so the user does not end up
+           ‘breaking’ the application while using it with bad input.</p>
+      </div>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program is an accumulation of my work, as well as some code provided from 
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;course matierials. See README file with source code for more information</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in your command line then type ‘java -jar UserLogin2.jar’ 
+          into your command line. Alternatively, you may be able to simply select the executable jar to run depending on 
+          the settings on your computer. If you are still having issues, I recommend downloading the source code 
+          (link below) and compiling & running in your preferred IDE.</p>
+      </div>
+      <div class="bottombuttons" User Login 2 Program.zip="">
+        <a href="jars/User Login 2 Program.zip">Folder with jar file</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/User%20Login%20Project%202" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-6">
+      <i class='fas fa-times-circle'></i>
+      <h3>Currency Display</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This python script is a web scraping utility for pulling wikipedia tables into a 
+          local CSV file. I wrote this program as a personal project.</p>
+        <div class="displayrow">
+          <div class="displaycolumn">
+            <h3>Wikipedia Table</h3>
+            <img src="images/cdisplayinput.png" class="cdisplay"></img>
+          </div>
+          <div class="displaycolumn">
+            <h3>Output as CSV spreadsheet</h3>
+            <img src="images/cdisplayoutput.png" class="cdisplay"></img>
+          </div>
+        </div>
+      </div>
+      <div class="project-desc2">
+        <h4>Acknowledgements:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I Utilized some popular Python libraries in order to accomplish this including:</p>
+        <p>Requests:&nbsp;&nbsp;This library has a method called ‘urlopen’ which was used to retrieve the initial HTML data 
+          stream from the wikipedia URL in my program. 
+        <p>BeautifulSoup4:&nbsp;&nbsp;This useful library helped me parse the data by html tags in the website’s datastream.
+        <p>Pandas:&nbsp;&nbsp;This library has a dataframe functionality that was used to store the table information. Pandas 
+          also has a to_csv function that allows me to export this dataframe as a CSV.</p>
+      </div>
+      <div class="project-desc3">
+        <h4>How to run: (link to python script at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Import the python script into your preferred IDE and simly run it. The program 
+          will create a file called OUTPUT.csv in the same folder that the Currency_Display.py exists in. OUTPUT.csv 
+          contains the data scraped from the wikipedia tables.</p>
+      </div>
+      <div class="bottombuttons" User Login 2 Program.zip="">
+        <a href="python/Currency_Display.py">Currency_Display.py</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Currency%20Display" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-7">
+      <i class='fas fa-times-circle'></i>
+      <h3>Cyber Threat Data Extractor</h3>
+      <div class="project-desc1">
+        <h4>Description:</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This python script takes an XML file as input. The XML file contains 1000’s of documents.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Each document could be 1 of 4 types:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. collective_intelligence</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. cyber_incident</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. cyber_threat</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. cyber_vulnerability</p>
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;The output of this program are these 4 different documents as spreadsheets 
+          or CSV files. The program uses beautiful soup to parse this data, and then carries over necessary 
+          columns to the newly formatted CSV files.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Additionally I mapped cyber incidents found in this data feed against an 
+          open-source database called NVD or National Vulnerability Database, using the CVE number found in 
+          both datasets as a foreign key. Learn more about the CVE program here. During analysis, if a 
+          particular incident was found of interest, the user is instantly given more access to verified 
+          information about it.
+        </p>
+      </div>
+      <div class="project-desc2">
+        <h4>How to run: (link to source code at the bottom)</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;I do not have access or permission to share the data used by this application. 
+          Therefore it can not be operated. However, my documented source code is available. A general 
+          understanding can be made as to what it does by reading the documentation in the code.</p>
+      </div>
+      <div class="bottombuttons" XML2CSV.py="">
+        <a href="python/XML2CSV.py">XML2CSV.py</a>
+      </div>
+      <div class="source-code-buttons">
+        <a href="https://github.com/charliescruggs/Project-Display-Case/tree/master/Cyber%20Threat%20Data%20Extractor" target="_blank"> source code (github)</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-8">
+      <i class='fas fa-times-circle'></i>
+      <h3>Website 1</h3>
+    </div>
+    <div class="preview" data-target="p-9">
+      <i class='fas fa-times-circle'></i>
+      <h3>My Resume</h3>
+      <embed src="docs/Charles_Resume_Fall_2022.pdf" type="application/pdf" width="100%" height="74%"></embed>
+      <p>This document was created with a programming language called LaTeX, within an editor called Overleaf.</p>
+      <div class="source-code-buttons">
+        <a href="https://www.overleaf.com/read/vmhztjtyccfs" target="_blank"> source code (overleaf.com)</a>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- -------------Create pop up windows for each project -->
-<div class = "project-preview">
-  <div class = "preview" data-target="p-1">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/asteroidsImg.png" alt="">
-    <h3>Asteroids</h3>
-    <p>A classic arcade game</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-2">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/zip.png" alt="">
-    <h3>File Compression Utility</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-3">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Prepare new library user data</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-4">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/LoginGUI.png" alt="">
-    <h3>User Login Project 1</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-5">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/ConsoleGUI.png" alt="">
-    <h3>User Login Project 2</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-6">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/CurrencyDisplay.png" alt="">
-    <h3>Currency Display</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-7">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Cyber Threat Data Extractor</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-8">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/Library.png" alt="">
-    <h3>Website 1</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-
-  <div class = "preview" data-target="p-9">
-    <i class='fas fa-times-circle'></i>
-    <img src="images/overleaf image.png" alt="">
-    <h3>Overleaf Resume</h3>
-    <p>A classic arcade game`</p>
-    <div class ="buttons">
-      <a href="#" class="source-code">access source code</a>
-    </div>
-  </div>
-  
-</div>
-
-<script src="myScript.js"></script>
+  <script src="myScript.js"></script>
 </body>
 </html>
