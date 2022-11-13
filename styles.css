@@ -322,3 +322,7 @@ padding-right: 10px;
   background: #444;
   color: #fff;
   }
+
+  .sourcelink {
+    display: inline;
+  }
