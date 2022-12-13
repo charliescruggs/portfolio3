@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .title{
   font-family: sans-serif;
   color: #85bf87; 
