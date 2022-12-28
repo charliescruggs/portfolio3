@@ -180,15 +180,21 @@ font-size: 2rem;
 }
 
 .project-preview .preview .asteroiddemo {
+  margin-left: auto;
+  margin-right: auto;
   width:320px;
   height: 260px;
   }
 
 .project-preview .preview .coldbrewimg {
+  margin-left: auto;
+  margin-right: auto;
   width:200px;
   height: 200px;
   }
 .project-preview .preview .editorimg {
+  margin-left: auto;
+  margin-right: auto;
   width:100%;
   height: 55%;
   }
