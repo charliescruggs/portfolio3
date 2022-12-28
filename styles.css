@@ -18,7 +18,7 @@ body{
   height: 15%;
 }
 .tabContainer .buttonContainer button{
-  width: 25%;
+  width: 20%;
   height: 100%;
   float: left;
   border: none;
@@ -184,10 +184,14 @@ font-size: 2rem;
   height: 260px;
   }
 
-  .project-preview .preview .coldbrewimg {
-    width:200px;
-    height: 200px;
-    }
+.project-preview .preview .coldbrewimg {
+  width:200px;
+  height: 200px;
+  }
+.project-preview .preview .editorimg {
+  width:100%;
+  height: 55%;
+  }
 
 .project-preview .preview .buttons a {
 padding: 15px 60px;
