@@ -86,7 +86,7 @@
           <div class="card" data-name="p-8">
             <img src="images/imageeditoricon.png" alt="..." class="card-img-top">
             <h2 class="cardLabel">Image Editor</h2>
-            <p>Built with .Net Core framework</p>
+            <p class="cardDesc">Built with .Net Core framework</p>
             <p class="cardDesc">Draw & move colored rectangles on an image</p>
           </div>
         </div>
@@ -119,12 +119,12 @@
             <p class="cardDesc">My resume; created using LaTeX editor called Overleaf</p>
           </div>
         </div>
-        <div class="column">
+        <!-- <div class="column">
           <div class="empty-card">
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="charles-scruggs" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/charles-scruggs?trk=profile-badge"></a></div>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="charles-scruggs" data-version="v1"><a class="badge-base__link LI-profile-badge" href="https://www.linkedin.com/in/charles-scruggs?trk=profile-badge"></a></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     
@@ -136,34 +136,21 @@
       <img src="images/asteroidDemo.gif" class="asteroiddemo"></img>
       <div class="project-desc1">
         <h4>Description:</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;This version of the classic Asteroids game was created as a personal programming project during
-           my university studies. Because the course was focused around object oriented design, I implemented
-            this program with polymorphism in mind. Many of the objects share the same parent class, but also
-             contribute their own specialized behavior on the game board. </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;For example, all of the animated objects used such as: asteroids, bullets, ship, stars have unique
-           behavior and values attributed to their type, yet they inherit from the same parent classes: either
-            AnimatedElement.java and/or GameElement.java (see github source code below) where an Animated
-             Element is a GameElement but a game element is not necessarily an Animated Element.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This version of the classic Asteroids game was implemented with polymorphism in mind. 
+          Many of the objects share the same parent class with inherited attributes, but also contribute their own specialized behavior on the game board. </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;Abbreviated Class diagram of GameElement object relationships:</p>
         <img src="images/AsteroidsUML.png" class="asteroiddiagram"></img>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;These relationships between objects allow them all to be updated in arrays in the AsteroidsGame class,
-           as the game timer iterates. This allows for encapsulation of each specific object's inner workings from 
-           other classes such as the game driver class. This AsteroidsGame class only needs to call methods of the 
-           objects it calls on for them to behave accordingly. This hierarchy was a key aspect in its object oriented
-            design.</p>
-      </div>
-      <div class="project-desc2">
-        <h4>Acknowledgements:</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;Some classes were provided by our professor as the primary focus of this project 
-          was to learn object oriented design, while utilizing provided classes and libraries. More information about
-           code provided can be found in the ReadMe file with this project's source code on github.</p>
+           as the game timer iterates. This hierarchy was a key aspect in its object oriented design.</p>
       </div>
       <div class="project-desc3">
         <h4>How to run:</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line then type ‘java -jar Asteroids.jar’ into 
-          your command line. Alternatively, you may be able to simply select the executable jar to run 
-          depending on the settings on your computer. If you are still having issues, I reccomend downloading 
-          the source code (link below) and compiling & running in your preferred IDE.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Locate downloaded jar file in command line</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Type ‘java -jar Asteroids.jar’ into your command line</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Alternatively, you may be able to simply select the executable jar to run depending on 
+          the settings on your computer.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;If you are still having issues, I reccomend downloading the source code (link below) and 
+          compiling & running in your preferred IDE.</p>
       </div>
       <div class="bottombuttons" Asteroids.jar="">
         <a href="/portfolio3/jars/Asteroids.jar">Asteroids.jar</a>
@@ -179,7 +166,7 @@
       <div class="project-desc1">
         <h4>Description:</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;This file compression utility accomplishes lossless data compression via a 
-          ‘Huffman coding tree’ implementation. It was created for a project in a Data and Algorithms course.</p>
+          ‘Huffman coding tree’ implementation.</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;The basic premise of the Huffman encoding is that a unique prefix is assigned 
           to each character from the input, where each prefix is determined by that character’s frequency. The more 
           frequent the character, the smaller the prefix code.</p>
@@ -188,29 +175,6 @@
           difference being a PQ has an element associated with a priority level where an element with a high priority
            is served before an element with a lower one.</p>
         <img src="images/huffman.png" class="widediagram"></img>
-      </div>
-      <div class="project-desc2">
-        <h4>Acknowledgements:</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;This program is an accumulation of my work, as well as some code provided from 
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;course matierials. See README file with source code for more information</p>
-      </div>
-      <div class="project-desc3">
-        <h4>How to run: (link to source code at the bottom)</h4>
-        <p>There are two ‘Main’ classes included in this package.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;1. JMzip (compress/zip file)</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, the user zips a file by compiling & running JMZip.java.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If successful, a zipped document (zipped.jmz) will be created</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in the project’s root folder, outside of the src folder.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;2. JMUnzip (decompress/unzip file)</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This second ‘Main’ class finds this zipped file and decompresses it.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user just has to compile and run this program.</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A decompressed document file is created in the project’s root folder (unzipped.doc).</p>
-        <img src="images/zipDemo.png" alt=""></img>
-        <p>A sample document to be zipped is already included in this package in the src file. To zip your own file, 
-          just add your file to the src folder and replace the relative path in the code with a path to your own 
-          document.</p>
-        <p>The path to change can be found in JMzip.java on line 43</p>
-        <img src="images/pathchange.png" alt=""></img>
       </div>
       <div class="source-code-buttons">
         <a href="https://github.com/charliescruggs/Project-Display-Case-2/tree/main/Asteroid%20Game" target="_blank"> source code (github)</a>
@@ -222,14 +186,10 @@
       <div class="project-desc1">
         <h4>Description:</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;This program converts a CSV file into an XML file while normalizing values to 
-          match the data model of their destination. This was part of a project to integrate Users from another 
-          college into the William & Mary library IT system. Some values were simply wrapped in XML tags while 
-          others needed their values prepared first, and then wrapped in XML tags. Other non-important values were 
-          omitted from the resulting dataset.</p>
-      </div>
-      <div class="project-desc2">
-        <h4>Specifications:</h4>
-        <img src="images/libraryspecs.png" alt=""></img>
+          match the data model of their destination.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;This was part of a project to integrate Users from another college into the William & Mary library IT system.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Some values were simply wrapped in XML tags while others needed their values prepared first, and then wrapped in XML tags.</p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Other non-important values were omitted from the resulting dataset.</p>
       </div>
       <div class="project-desc3">
         <h4>Other notes:</h4>
@@ -270,10 +230,9 @@
       <h3>User Login 2</h3>
       <div class="project-desc1">
         <h4>Description:</h4>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a project I created for a Java programming course in university. User
-           Login Project 2 has a console interface where the menu is printed back to the user in 
-           a loop until they choose to exit. The login information is accesed and stored in a sample file called 
-           users.txt within the src folder of this project.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;User Login Project 2 has a console interface where the menu is printed back to the user in 
+           a loop until they choose to exit.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Login information is accesed and stored in a sample file called users.txt within the src folder of this project.</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;This program provides the base behavioral structure which will be implemented as a GUI for Login 
           Project 1. It will utilize buttons, windows, textboxes and data (user info) storage, as opposed to 
           the menu printing method.</p>
@@ -397,7 +356,7 @@
       <h3>Image Editor</h3>
       <img src="images/editorwin.png" class="editorimg"></img>
       <div class="project-desc1">
-        <h4>Description:</h4>
+        >Description:</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a very simple image editor, built using WPF (Windows Presentation Foundation) in C# and .Net Core</p>
         <p> - link to source code at the bottom</p>
       </div>
@@ -432,6 +391,7 @@
       <img src="images/coldbrewimg.png" class="coldbrewimg"></img>
       <div class="project-desc1">
         <h4>Description:</h4>
+        <p>This website is an open discussion about a particular brew style of coffee.</p>
       </div>
       <div class="project-desc2">
         <h4>Acknowledgements:</h4>
@@ -483,7 +443,7 @@
     <div class="preview" data-target="p-11">
       <i class='fas fa-times-circle'></i>
       <h3>My Resume</h3>
-      <embed src="docs/Charles_Resume_2022.pdf" type="application/pdf" width="100%" height="70%"></embed>
+      <embed src="docs/Charles_Resume_2022__Refined_.pdf" type="application/pdf" width="100%" height="70%"></embed>
       <p>This document was created with a programming language called LaTeX, within an editor called Overleaf.</p>
       <div class="source-code-buttons">
         <a href="https://www.overleaf.com/read/vmhztjtyccfs" target="_blank"> source code (overleaf.com)</a>
