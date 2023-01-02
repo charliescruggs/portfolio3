@@ -195,8 +195,8 @@ font-size: 2rem;
 .project-preview .preview .editorimg {
   margin-left: auto;
   margin-right: auto;
-  width:100%;
-  height: 55%;
+  width:700px;
+  height: 365px;
   }
 
 .project-preview .preview .buttons a {
